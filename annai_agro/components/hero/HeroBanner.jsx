@@ -55,7 +55,7 @@ const HeroBanner = () => {
         <div className="flex">
           {slides.map((slide, index) => (
             <div key={index} className="min-w-full">
-              <div className="relative w-full aspect-[16/7] sm:aspect-[16/6] lg:aspect-[16/6] rounded-2xl overflow-hidden">
+              <div className="relative w-full aspect-16/7 sm:aspect-16/6 lg:aspect-16/6 rounded-2xl overflow-hidden">
                 {/* Background Image */}
                 <Image
                   src={bannerBg}
