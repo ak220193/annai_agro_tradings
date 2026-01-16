@@ -1,14 +1,14 @@
 export const NAV_LINKS = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { 
-    name: "Products", 
+  {
+    name: "Products",
     href: "/products",
     subLinks: [
       { name: "Organic Spices", href: "/products/spices" },
       { name: "Premium Millets", href: "/products/millets" },
       { name: "Grains & Pulses", href: "/products/pulses" },
-    ]
+    ],
   },
   { name: "Certifications", href: "/certifications" },
   { name: "Blog", href: "/blog" },
@@ -22,8 +22,8 @@ export const CONTACT_DETAILS = {
   socials: {
     linkedin: "https://linkedin.com/company/annai-agro-tradings",
     instagram: "https://instagram.com/annai_agro", // Update with real link
-    youtube: "https://youtube.com/@annai_agro",     // Update with real link
-    whatsapp: "919344295395" // Clean number for API
+    youtube: "https://youtube.com/@annai_agro", // Update with real link
+    whatsapp: "919344295395", // Clean number for API
   },
 };
 
@@ -41,7 +41,15 @@ export const PRODUCT_CATEGORIES = [
     category: "Millets",
     image: "/hero/Products/Cerals-2.jpg",
     description: "Nutrient-dense ancient grains for global health.",
-    items: ["Koda", "Barnyard", "Little", "Foxtail", "Pearl", "Sorghum", "Ragi"],
+    items: [
+      "Koda",
+      "Barnyard",
+      "Little",
+      "Foxtail",
+      "Pearl",
+      "Sorghum",
+      "Ragi",
+    ],
     color: "bg-green-50",
   },
   {
@@ -111,5 +119,4 @@ export const BEST_SELLERS = [
     slug: "seeraga-samba",
     specs: ["Aromatic Tiny Grain", "Aged 12+ Months", "Traditional Variety"],
   },
- 
 ];
