@@ -33,7 +33,7 @@ const Products = () => {
               className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 flex flex-col h-full"
             >
               {/* Image Section - Performance Optimized */}
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-200">
+              <div className="relative aspect-4/3 w-full overflow-hidden bg-slate-200">
                 <Image
                   src={cat.image}
                   alt={`Bulk supply of ${cat.category} - Annai Agro Tradings`}
