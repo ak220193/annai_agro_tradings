@@ -1,5 +1,6 @@
 import About from "@/components/hero/About";
 import HeroBanner from "@/components/hero/HeroBanner";
+import Products from "@/components/hero/Products";
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
   <section>
     <HeroBanner/>
     <About/>
+    <Products/>
 
   </section>
   );
