@@ -15,7 +15,7 @@ const BestSeller = () => {
             <HiOutlineArrowTrendingUp size={28} />
           </div>
           <div>
-            <h2 id="bestseller-title" className="font-heading text-3xl font-black text-slate-900">
+            <h2 id="bestseller-title" className="font-heading text-4xl font-black text-slate-900">
               Best Selling <span className="text-[#67944e]">Exports</span>
             </h2>
             <p className="text-slate-500 text-sm font-body mt-1">
