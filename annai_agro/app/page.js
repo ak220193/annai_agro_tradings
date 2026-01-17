@@ -19,7 +19,6 @@ export default function Home() {
       <Worldmap/>
       <Testimonial/>
       <ContactMap/>
-      
     </section>
   );
 }
