@@ -8,12 +8,15 @@ export const metadata = {
     "Expert insights on traditional Indian produce, B2B export standards, and authentic recipes for a better life.",
 };
 
-export default function BlogPage() {
+export default async function BlogPage({searchParams}) {
+  const params = await searchParams;
+  const activeCategory = params.category || "All Insights";
+  
   return (
     <main className="bg-white min-h-screen">
       <BlogHero />
-      <BlogFilters />
-      <BlogGrid />
+      <BlogFilters activeCategory={activeCategory} />
+      <BlogGrid activeCategory={activeCategory} />
     </main>
   );
 }

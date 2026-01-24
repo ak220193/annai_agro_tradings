@@ -421,3 +421,126 @@ export const products = [
     specs: { purity: "100% Natural", moisture: "5-8%", grade: "Unrefined / Export", shelfLife: "6-12 Months", origin: "India" }
   }
 ];
+
+export const BLOG_POSTS = [
+  {
+    id: 1,
+    title: "Standardizing Purity: Maintaining 99% Curcumin in Turmeric Exports",
+    excerpt: "For global B2B buyers, turmeric purity is a non-negotiable metric. Learn about our steam-sterilization process that preserves curcumin integrity.",
+    category: "Authentic Spices",
+    date: "Jan 17, 2026",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1615485290382-441e4d0c9cb5?q=80&w=1200",
+    keywords: ["turmeric exporter india", "organic turmeric supplier india", "turmeric bulk supplier"],
+    targetLink: "/products/turmeric",
+    content: {
+      intro: "In the global market, the value of turmeric is dictated by its curcumin content and microbial safety.",
+      sections: [
+        {
+          heading: "The Curcumin Standard",
+          text: "We ensure our Salem and Erode varieties maintain a curcumin level between 2.5% to 4.5% through controlled drying."
+        }
+      ]
+    }
+  },
+  {
+    id: 2,
+    title: "The Heat Factor: Why Our Dry Red Chilli Meets Global Scoville Standards",
+    excerpt: "As a leading Indian dry red chilli exporter, we focus on capsaicin retention and moisture control for long-haul shipping to Europe and UAE.",
+    category: "Authentic Spices",
+    date: "Jan 18, 2026",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1599330230232-a5676359521d?q=80&w=1200",
+    keywords: ["dry red chilli exporter india", "dry red chilli bulk supplier", "indian dry red chilli exporter"],
+    targetLink: "/products/dry-red-chilli",
+    content: {
+      intro: "Heat profile and color retention are the two pillars of quality for dried chilli exports.",
+      sections: [
+        {
+          heading: "SHU Monitoring",
+          text: "Every batch of S17 Teja and Byadgi is tested for its Scoville Heat Units to ensure compliance with client specifications."
+        }
+      ]
+    }
+  },
+  {
+    id: 3,
+    title: "Seeraga Samba: The Fragrant Alternative to Basmati in Global Markets",
+    excerpt: "Decoding why the Seeraga Samba rice supplier network in India is seeing a 40% rise in demand across Mediterranean and Southeast Asian markets.",
+    category: "Traditional Rice",
+    date: "Jan 19, 2026",
+    readTime: "10 min",
+    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=1200",
+    keywords: ["seeraga samba rice exporter india", "traditional rice exporter india"],
+    targetLink: "/products/seeraga-samba-rice",
+    content: {
+      intro: "Seeraga Samba, often called the 'Jeera' of rice, is gaining global traction for its unique aroma.",
+      sections: [
+        {
+          heading: "The GI Tag Advantage",
+          text: "Sourced directly from the Dindigul and Vellore clusters, our rice preserves its traditional geographic characteristics."
+        }
+      ]
+    }
+  },
+  {
+    id: 4,
+    title: "Millets 2026: Why Koda and Barnyard Millets are the Future of Superfoods",
+    excerpt: "As a Koda millet exporter in India, we analyze the shifting trends toward gluten-free ancient grains in the Western retail sector.",
+    category: "Product Benefits",
+    date: "Jan 21, 2026",
+    readTime: "9 min",
+    image: "https://images.unsplash.com/photo-1437252611977-07f74518abd7?q=80&w=1200",
+    keywords: ["koda millet exporter india", "barnyard millet bulk supplier", "organic koda millet exporter"],
+    targetLink: "/products/koda-millet",
+    content: {
+      intro: "The international year of millets has sparked a permanent shift in consumer preference toward gluten-free grains.",
+      sections: [
+        {
+          heading: "Processing for Export",
+          text: "Our multi-stage de-husking and sortex cleaning ensure a 99% purity level, making our millets ready for retail packaging."
+        }
+      ]
+    }
+  },
+  {
+    id: 5,
+    title: "Quality Assurance: Why APEDA & FSSAI Certifications Matter for Importers",
+    excerpt: "Safety is the priority. Discover the rigorous lab testing our spices undergo to meet international food safety compliance.",
+    category: "Farm Authenticity",
+    date: "Jan 22, 2026",
+    readTime: "5 min",
+    image: "https://images.unsplash.com/photo-1508515053963-70c7cc39dfb5?q=80&w=1200",
+    keywords: ["apeda registered exporter india", "fssai certified food exporter"],
+    targetLink: "/about",
+    content: {
+      intro: "For an importer, certifications are the only proof of a safe and ethical supply chain.",
+      sections: [
+        {
+          heading: "Traceability Protocols",
+          text: "We implement QR-based traceability that connects the final export pallet back to the specific FPO cluster."
+        }
+      ]
+    }
+  },
+  {
+    id: 6,
+    title: "Sweetening Naturally: The Industrial Use of Organic Palm Jaggery",
+    excerpt: "How palm jaggery bulk supplier partnerships are helping food manufacturers replace refined sugar in premium confectionery.",
+    category: "Recipes",
+    date: "Jan 23, 2026",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=1200",
+    keywords: ["palm jaggery exporter india", "palm jaggery bulk supplier"],
+    targetLink: "/products/palm-jaggery",
+    content: {
+      intro: "Palm jaggery is no longer just a traditional sweetener; it is a high-demand functional food ingredient.",
+      sections: [
+        {
+          heading: "B2B Supply Consistency",
+          text: "Our extraction process ensures a consistent low-moisture block or powder form, ideal for large-scale food manufacturing."
+        }
+      ]
+    }
+  }
+];
