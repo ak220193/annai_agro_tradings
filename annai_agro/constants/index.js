@@ -4,11 +4,6 @@ export const NAV_LINKS = [
   {
     name: "Products",
     href: "/products",
-    subLinks: [
-      { name: "Organic Spices", href: "/products/spices" },
-      { name: "Premium Millets", href: "/products/millets" },
-      { name: "Grains & Pulses", href: "/products/pulses" },
-    ],
   },
   { name: "Gallery", href: "/gallery" },
   { name: "Blog", href: "/blog" },
@@ -147,7 +142,282 @@ export const CERTIFICATIONS = [
     description: "Ensures compliance with international quality standards for agro exports.",
     color: "bg-blue-50",
   },
-
 ];
 
 
+export const products = [
+  // --- SPICES ---
+  {
+    id: "dry-red-chilli",
+    name: "Dry Red Chilli",
+    scientificName: "Capsicum annuum Linn",
+    cat: "Spices",
+    img: "/products/dry chilli/img1.jpg",
+    overview: "Leading dry red chilli exporter from India. We supply premium medium-heat varieties sourced from organic farmers, including GI-tagged Ramnad Mundu. As a trusted dry red chilli bulk supplier, we ensure global export standards.",
+    hsn: "09042110",
+    seoKeywords: [
+      "dry red chilli exporter india", 
+      "dry red chilli supplier india", 
+      "dry red chilli bulk supplier", 
+      "red chilli wholesale supplier india", 
+      "indian dry red chilli exporter"
+    ],
+    specs: { purity: "99% Min", moisture: "10-12%", grade: "Premium / Export", shelfLife: "12-24 Months", origin: "India" },
+    varieties: [
+      { name: "S9- Ramnad Mundu", heat: "Medium", note: "GI Tagged, round shape." },
+      { name: "S17 Teja", heat: "High", note: "Slender, bright red." },
+      { name: "Byadgi", heat: "Low", note: "Deep red, wrinkled skin." }
+    ]
+  },
+  {
+    id: "turmeric",
+    name: "Turmeric",
+    scientificName: "Curcuma longa",
+    cat: "Spices",
+    img: "/gallery/turmeric.jpg",
+    overview: "Prominent turmeric exporter from India specializing in high-curcumin fingers. We are an organic turmeric supplier in India serving B2B markets as a turmeric bulk supplier and wholesale partner.",
+    hsn: "09103020",
+    seoKeywords: [
+      "turmeric exporter india", 
+      "organic turmeric supplier india", 
+      "turmeric bulk supplier", 
+      "turmeric wholesale supplier india", 
+      "turmeric exporter from india"
+    ],
+    specs: { purity: "99% Min", moisture: "< 10%", grade: "Single/Double Polished", shelfLife: "12-24 Months", origin: "India" },
+    varieties: [
+      { name: "Salem Local", curcumin: "3.5%-4%", note: "Bright golden-yellow." },
+      { name: "Erode Local", curcumin: "2.5%-3.5%", note: "GI Tagged variety." }
+    ]
+  },
+  {
+    id: "green-cardamom",
+    name: "Green Cardamom",
+    scientificName: "Elettaria cardamomum",
+    cat: "Spices",
+    img: "/products/cardomom/img1.jpg",
+    overview: "Authentic green cardamom supplier in India. Sourced from the Western Ghats, we act as a cardamom bulk supplier and cardamom exporter from India for premium export-grade pods.",
+    hsn: "090831",
+    seoKeywords: [
+      "cardamom exporter india", 
+      "green cardamom supplier india", 
+      "cardamom bulk supplier", 
+      "cardamom wholesale supplier india"
+    ],
+    specs: { purity: "99% Min", moisture: "10-12%", grade: "Export Quality (7mm - 8mm+)", shelfLife: "6-12 Months", origin: "India" }
+  },
+  {
+    id: "black-pepper",
+    name: "Black Pepper",
+    scientificName: "Piper nigrum",
+    cat: "Spices",
+    img: "/products/black pepper/img.jpg",
+    overview: "Indian black pepper exporter offering high-piperine Malabar pepper. We are a dedicated black pepper supplier in India and bulk supplier for the global food and pharma industries.",
+    hsn: "09041130",
+    seoKeywords: [
+      "black pepper exporter india", 
+      "black pepper supplier india", 
+      "black pepper bulk supplier", 
+      "indian black pepper exporter"
+    ],
+    specs: { purity: "99% Min", moisture: "10-12%", grade: "500 GL to 580 GL", shelfLife: "6-12 Months", origin: "India" }
+  },
+  {
+    id: "clove",
+    name: "Clove",
+    scientificName: "Syzygium aromaticum",
+    cat: "Spices",
+    img: "/gallery/clove.jpg",
+    overview: "GI-tagged clove exporter from India. Sourced from Kanniyakumari, we are a clove supplier in India providing handpicked premium cloves to bulk and wholesale buyers worldwide.",
+    hsn: "090710",
+    seoKeywords: [
+      "clove exporter india", 
+      "clove supplier india", 
+      "clove bulk supplier", 
+      "clove wholesale supplier india"
+    ],
+    specs: { purity: "99% Min", moisture: "10-12%", grade: "Handpicked Premium", shelfLife: "12-24 Months", origin: "India" }
+  },
+
+  // --- MILLETS ---
+  {
+    id: "koda-millet",
+    name: "Koda Millet",
+    scientificName: "Paspalum scrobiculatum",
+    cat: "Millets",
+    img: "/products/millets/koda.png",
+    overview: "Certified organic koda millet exporter from India. As a leading koda millet supplier in India, we provide high-fiber, gluten-free grains to koda millet bulk buyers globally.",
+    hsn: "10089090",
+    seoKeywords: [
+      "koda millet exporter india", 
+      "koda millet supplier india", 
+      "koda millet bulk supplier", 
+      "organic koda millet exporter"
+    ],
+    specs: { purity: "99% Min", moisture: "10-12%", grade: "Sortex Cleaned", shelfLife: "6-12 Months", origin: "India" }
+  },
+  {
+    id: "barnyard-millet",
+    name: "Barnyard Millet",
+    scientificName: "Echinochloa esculenta",
+    cat: "Millets",
+    img: "/products/millets/ban2.jpg",
+    overview: "Premier barnyard millet exporter from India. We are an organic barnyard millet exporter and bulk supplier specializing in iron-rich, diabetic-friendly grains.",
+    hsn: "10082920",
+    seoKeywords: [
+      "barnyard millet exporter india", 
+      "barnyard millet supplier india", 
+      "barnyard millet bulk supplier", 
+      "organic barnyard millet exporter"
+    ],
+    specs: { purity: "99% Min", moisture: "11%", grade: "Premium Sortex", shelfLife: "12 Months" }
+  },
+  {
+    id: "little-millet",
+    name: "Little Millet",
+    scientificName: "Panicum sumatrense",
+    cat: "Millets",
+    img: "/products/millets/banyard-1.jpg",
+    overview: "Export-quality little millet supplier in India. We serve as a little millet bulk supplier and organic little millet exporter, providing nutrient-dense, sortex-cleaned grains.",
+    hsn: "10082930",
+    seoKeywords: [
+      "little millet exporter india", 
+      "little millet supplier india", 
+      "little millet bulk supplier", 
+      "organic little millet exporter"
+    ],
+    specs: { purity: "99% Min", moisture: "10%", grade: "Export Quality", shelfLife: "12 Months" }
+  },
+  {
+    id: "foxtail-millet",
+    name: "Foxtail Millet",
+    scientificName: "Setaria italica",
+    cat: "Millets",
+    img: "/products/millets/fox.jpg",
+    overview: "Leading foxtail millet exporter from India. We are a foxtail millet bulk supplier and organic foxtail millet exporter, delivering high-protein ancient grains for the health food industry.",
+    hsn: "10082940",
+    seoKeywords: [
+      "foxtail millet exporter india", 
+      "foxtail millet supplier india", 
+      "foxtail millet bulk supplier", 
+      "organic foxtail millet exporter"
+    ],
+    specs: { purity: "99% Min", moisture: "12%", grade: "Double Polished", shelfLife: "12 Months" }
+  },
+  {
+    id: "pearl-millet",
+    name: "Pearl Millet (Bajra)",
+    scientificName: "Pennisetum glaucum",
+    cat: "Millets",
+    img: "/products/millets/pearl2.jpg",
+    overview: "Major pearl millet exporter from India. Also known as a bajra exporter from India, we act as a pearl millet bulk supplier and wholesale partner for global food and feed industries.",
+    hsn: "10082110",
+    seoKeywords: [
+      "pearl millet exporter india", 
+      "bajra exporter from india", 
+      "pearl millet bulk supplier", 
+      "pearl millet wholesale supplier"
+    ],
+    specs: { purity: "98% Min", moisture: "12%", grade: "Machine Cleaned", shelfLife: "12 Months" }
+  },
+  {
+    id: "red-sorghum",
+    name: "Sorghum (Red)",
+    scientificName: "Sorghum bicolor",
+    cat: "Millets",
+    img: "/products/millets/redsorgum2.jpg",
+    overview: "Red sorghum exporter from India and premium jowar bulk supplier. We provide red sorghum wholesale for gluten-free brewing and food manufacturing markets.",
+    hsn: "10079000",
+    seoKeywords: [
+      "red sorghum exporter india", 
+      "sorghum exporter from india", 
+      "jowar bulk supplier india", 
+      "sorghum wholesale supplier"
+    ],
+    specs: { purity: "99% Min", moisture: "12%", grade: "Premium Red", shelfLife: "12 Months" }
+  },
+  {
+    id: "ragi",
+    name: "Ragi (Finger Millet)",
+    scientificName: "Eleusine coracana",
+    cat: "Millets",
+    img: "/products/millets/ragired.jpg",
+    overview: "Top ragi exporter from India. As a finger millet exporter from India and ragi bulk supplier, we provide calcium-rich grains to wholesale food processors worldwide.",
+    hsn: "10082910",
+    seoKeywords: [
+      "ragi exporter india", 
+      "finger millet exporter india", 
+      "ragi bulk supplier", 
+      "ragi wholesale supplier india"
+    ],
+    specs: { purity: "99% Min", moisture: "12%", grade: "Sortex Premium", shelfLife: "12 Months" }
+  },
+
+  // --- CEREALS ---
+  {
+    id: "non-basmati-rice",
+    name: "Non-Basmati Rice",
+    scientificName: "Oryza sativa",
+    cat: "Cereals",
+    img: "/products/millets/bs-2.jpg",
+    overview: "Established non-basmati rice exporter from India. We are a reliable non-basmati rice supplier in India and indian rice exporter for long and short grain varieties.",
+    hsn: "10063010",
+    seoKeywords: [
+      "non basmati rice exporter india", 
+      "non basmati rice supplier india", 
+      "non basmati rice bulk supplier", 
+      "indian rice exporter"
+    ],
+    specs: { purity: "99% Min", moisture: "14% Max", grade: "Export Grade", shelfLife: "24 Months" }
+  },
+  {
+    id: "seeraga-samba-rice",
+    name: "Seeraga Samba Rice",
+    scientificName: "Oryza sativa var. Seeraga Samba",
+    cat: "Cereals",
+    img: "/products/millets/seeraga samba.jpg",
+    overview: "Traditional rice exporter from India specializing in GI-tagged Seeraga Samba. We are a primary seeraga samba rice supplier in India and bulk supplier for aromatic rice markets.",
+    hsn: "10063010",
+    seoKeywords: [
+      "seeraga samba rice exporter india", 
+      "seeraga samba rice supplier india", 
+      "seeraga samba rice bulk supplier", 
+      "traditional rice exporter india"
+    ],
+    specs: { purity: "99.5% Min", moisture: "12%", grade: "Aromatic Premium", shelfLife: "12-24 Months" }
+  },
+  {
+    id: "red-rice",
+    name: "Red Rice",
+    scientificName: "Oryza punctata",
+    cat: "Cereals",
+    img: "/products/millets/redrice-2.jpg",
+    overview: "Leading red rice exporter from India. As a red rice supplier and organic red rice exporter, we provide nutrient-rich unpolished rice for health-conscious bulk buyers.",
+    hsn: "10063010",
+    seoKeywords: [
+      "red rice exporter india", 
+      "red rice supplier india", 
+      "red rice bulk supplier", 
+      "organic red rice exporter"
+    ],
+    specs: { purity: "99% Min", moisture: "13%", grade: "Organic Certified", shelfLife: "12 Months" }
+  },
+
+  // --- SUGAR ---
+  {
+    id: "palm-jaggery",
+    name: "Palm Jaggery",
+    scientificName: "Borassus flabellifer extract",
+    cat: "Sugar",
+    img: "/products/millets/pm-3.jpg",
+    overview: "Premium palm jaggery exporter from India. We are an organic palm jaggery exporter and palm jaggery supplier in India, providing traditional, unrefined sweeteners to bulk importers.",
+    hsn: "17011310",
+    seoKeywords: [
+      "palm jaggery exporter india", 
+      "palm jaggery supplier india", 
+      "palm jaggery bulk supplier", 
+      "organic palm jaggery exporter"
+    ],
+    specs: { purity: "100% Natural", moisture: "5-8%", grade: "Unrefined / Export", shelfLife: "6-12 Months", origin: "India" }
+  }
+];
