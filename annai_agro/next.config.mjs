@@ -9,6 +9,7 @@ const nextConfig = {
   // Required for 'output: export' if you use the next/image component
   images: {
     unoptimized: true, 
+    remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com' }]
   },
 };
 export default nextConfig;
