@@ -12,7 +12,7 @@ const CompanyStory = () => {
         {/* Image Container: Optimized with Next.js Image component */}
         <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-square lg:aspect-4/3 bg-slate-100 group">
           <Image
-            src="/factory-gate.jpg" // Ensure this is a high-quality WebP image
+            src="/hero/about.jpg" 
             alt="Annai Agro Processing Plant Facility in Ramanathapuram"
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"
