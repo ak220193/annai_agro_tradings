@@ -1,24 +1,40 @@
 import React from 'react';
 
 const OurWork = () => {
-  const steps = [
-    { 
-      title: "Ethical Sourcing", 
-      desc: "Direct procurement from verified farms, ensuring premium quality harvests." 
-    },
-    { 
-      title: "Advanced Processing", 
-      desc: "Comprehensive cleaning, grading, and sterilization at our facility." 
-    },
-    { 
-      title: "Quality Assurance", 
-      desc: "Multi-level laboratory testing for purity and international safety compliance." 
-    },
-    { 
-      title: "Global Export", 
-      desc: "Secure, tamper-proof packaging with efficient global supply chain delivery." 
-    }
-  ];
+const steps = [
+  { 
+    title: "Identification of Sources", 
+    desc: "Strategic mapping of high-yield agricultural zones and direct procurement from verified organic-certified farms." 
+  },
+  { 
+    title: "Understanding POP Followed", 
+    desc: "Verifying the Package of Practices (POP) to ensure zero-pesticide usage and adherence to traditional farming protocols." 
+  },
+  { 
+    title: "Visiting Farmers & Need Analysis", 
+    desc: "On-ground field inspections and technical gap analysis to align crop output with specific international market demands." 
+  },
+  { 
+    title: "Screening Test", 
+    desc: "Preliminary laboratory screening for moisture content, physical purity, and absence of chemical residues." 
+  },
+  { 
+    title: "Order Creation from Customers", 
+    desc: "Formalizing technical specifications (COA requirements) and quantity timelines through our digital B2B portal." 
+  },
+  { 
+    title: "Arranging Lots on Requirement Basis", 
+    desc: "Systematic batching and grading of produce to match specific client standards for size, color, and aroma profiles." 
+  },
+  { 
+    title: "Third Party Sampling & Order Scaling", 
+    desc: "Collaborating with independent agencies (like SGS or Geo-Chem) for transparent quality validation and bulk consolidation." 
+  },
+  { 
+    title: "Export", 
+    desc: "Executing tamper-proof vacuum packaging and managing end-to-end logistics for secure global supply chain delivery." 
+  },
+];
 
   return (
     <section 
