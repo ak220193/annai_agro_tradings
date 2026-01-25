@@ -2,10 +2,10 @@ import ContactHero from "@/components/contact/ContactHero";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 
-
 export const metadata = {
   title: "Contact Our Export Desk | Annai Agro Tradings",
-  description: "Get in touch for bulk export inquiries, product specifications, and global supply chain partnerships.",
+  description:
+    "Get in touch for bulk export inquiries, product specifications, and global supply chain partnerships.",
 };
 
 export default function ContactPage() {
@@ -18,7 +18,6 @@ export default function ContactPage() {
           <ContactForm />
         </div>
       </section>
-      
     </main>
   );
 }

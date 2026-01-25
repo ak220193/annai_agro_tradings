@@ -72,7 +72,7 @@ const Products = () => {
                 <div className="mt-auto pt-4 border-t border-slate-50">
                   <Button 
                     text={`View ${cat.category}`} 
-                    href={`/products/${cat.category.toLowerCase().replace(/\s+/g, '-')}`}
+                    href={`/products`}
                     size="sm"
                     className="w-full justify-center"
                     showIcon={true}
