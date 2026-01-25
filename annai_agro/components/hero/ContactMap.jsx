@@ -35,7 +35,7 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
           
           {/* LEFT COLUMN: Map Container */}
-          <div className="relative min-h-[450px] rounded-[2.5rem] overflow-hidden shadow-xl border-8 border-slate-50 group bg-slate-100">
+          <div className="relative min-h-112.5 rounded-[2.5rem] overflow-hidden shadow-xl border-8 border-slate-50 group bg-slate-100">
             {!showMap ? (
               <div className="absolute inset-0 flex items-center justify-center flex-col gap-4">
                 <div className="w-10 h-10 border-4 border-[#67944e] border-t-transparent rounded-full animate-spin"></div>

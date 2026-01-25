@@ -46,7 +46,7 @@ const ContactForm = () => {
             onChange={handleChange}
             type="text" 
             className="w-full px-6 py-4 rounded-full bg-white border border-slate-200 focus:border-[#67944e] focus:ring-4 focus:ring-[#67944e]/5 outline-none transition-all text-sm font-medium" 
-            placeholder="John Doe" 
+            placeholder="" 
           />
         </div>
 
@@ -62,7 +62,7 @@ const ContactForm = () => {
             onChange={handleChange}
             type="email" 
             className="w-full px-6 py-4 rounded-full bg-white border border-slate-200 focus:border-[#67944e] focus:ring-4 focus:ring-[#67944e]/5 outline-none transition-all text-sm font-medium" 
-            placeholder="john@company.com" 
+            placeholder="" 
           />
         </div>
 
@@ -78,7 +78,7 @@ const ContactForm = () => {
             onChange={handleChange}
             type="text" 
             className="w-full px-6 py-4 rounded-full bg-white border border-slate-200 focus:border-[#67944e] focus:ring-4 focus:ring-[#67944e]/5 outline-none transition-all text-sm font-medium" 
-            placeholder="Bulk Turmeric Inquiry / Shipping Quote" 
+            placeholder="" 
           />
         </div>
 
@@ -94,7 +94,7 @@ const ContactForm = () => {
             onChange={handleChange}
             rows="4" 
             className="w-full px-6 py-8 rounded-[2rem] bg-white border border-slate-200 focus:border-[#67944e] focus:ring-4 focus:ring-[#67944e]/5 outline-none transition-all text-sm font-medium resize-none" 
-            placeholder="Describe your requirements (Quantity, Destination, Grade)..."
+            placeholder=""
           ></textarea>
         </div>
 
