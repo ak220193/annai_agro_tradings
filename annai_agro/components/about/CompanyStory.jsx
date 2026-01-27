@@ -38,7 +38,7 @@ const CompanyStory = () => {
           <div className="space-y-6">
             <p className="text-slate-700 text-lg leading-relaxed">
               Established in <strong className="text-slate-900 font-semibold">Ramanathapuram</strong>, 
-              Annai Agro has evolved from a local supplier into a premier 
+              Annai Agro has evolved from a local business into a premier 
               <span className="text-[#4d703b] font-bold"> global B2B agro-exporter</span>. 
               We specialize in the meticulous sourcing and processing of premium 
               agricultural products.
