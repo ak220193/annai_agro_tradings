@@ -61,7 +61,7 @@ export const ProductList = () => {
               
               <div className="relative aspect-square overflow-hidden bg-slate-50">
                 <Image 
-                  src={product.img} 
+                  src={Array.isArray(product.img) ? product.img[0] : (product.img || "/placeholder.png")} 
                   alt={`${product.name} wholesale supplier and exporter in India`} 
                   fill 
                   className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"

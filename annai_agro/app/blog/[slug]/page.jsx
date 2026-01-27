@@ -5,29 +5,27 @@ import { BLOG_POSTS } from '@/constants/index';
 import Script from 'next/script';
 
 export async function generateMetadata({ params }) {
-  // Destructure 'slug' because your folder is named [slug]
   const { slug } = await params;
   
-  // Compare as strings to avoid type-mismatch 404s
-  const post = BLOG_POSTS.find(p => String(p.id) === slug);
+  // Find by slug for SEO-friendly URLs
+  const post = BLOG_POSTS.find(p => p.slug === slug);
   
-  if (!post) return { title: "Insights Not Found" };
+  if (!post) return { title: "Technical Insight Not Found" };
 
   return {
-    title: `${post.title} | Technical Insights | Annai Agro`,
+    title: `${post.title} | Technical Analysis | Annai Agro`,
     description: post.excerpt,
-    keywords: post.keywords.join(", "),
+    keywords: post.keywords?.join(", "),
   };
 }
 
 export default async function BlogPostPage({ params }) {
   const { slug } = await params;
-  
-  // Use String comparison for reliable matching
-  const post = BLOG_POSTS.find(p => String(p.id) === slug);
+  const post = BLOG_POSTS.find(p => p.slug === slug);
 
   if (!post) notFound();
 
+  // Updated JSON-LD to TechArticle for B2B authority
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
@@ -49,7 +47,7 @@ export default async function BlogPostPage({ params }) {
         <article className="max-w-4xl mx-auto px-4 sm:px-6">
           
           <Link href="/blog" className="text-[#67944e] font-black uppercase tracking-[0.2em] text-[10px] mb-8 inline-block hover:translate-x-[-4px] transition-transform">
-             ← Back to Insights
+              ← Back to Insights
           </Link>
 
           <header className="mb-12">
@@ -86,18 +84,31 @@ export default async function BlogPostPage({ params }) {
             </p>
 
             {post.content.sections.map((section, idx) => (
-              <section key={idx} className="mb-12">
-                <h2 className="text-2xl md:text-3xl mb-4">{section.heading}</h2>
-                <p>{section.text}</p>
+              <section key={idx} className="mb-16">
+                <h2 className="text-2xl md:text-3xl mb-6 text-slate-900">{section.heading}</h2>
+                <p className="mb-6">{section.text}</p>
+                
+                {/* Renders the technical sub-points from the new array structure */}
+                {section.subPoints && (
+                  <ul className="grid grid-cols-1 gap-4 mt-8 list-none pl-0">
+                    {section.subPoints.map((point, pIdx) => (
+                      <li key={pIdx} className="flex items-start gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100 text-sm font-medium text-slate-700">
+                        <span className="text-[#67944e] mt-1">✔</span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </section>
             ))}
           </div>
 
+          {/* Related Posts Section */}
           <div className="mt-24 border-t border-slate-100 pt-16">
             <h3 className="text-sm font-black uppercase tracking-[0.3em] text-[#67944e] mb-10 text-center">More Technical Insights</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {BLOG_POSTS.filter(p => p.id !== post.id).slice(0, 2).map(related => (
-                <Link key={related.id} href={`/blog/${related.id}`} className="group p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:border-[#67944e]/30 transition-all">
+              {BLOG_POSTS.filter(p => p.slug !== post.slug).slice(0, 2).map(related => (
+                <Link key={related.id} href={`/blog/${related.slug}`} className="group p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:border-[#67944e]/30 transition-all">
                   <span className="text-[10px] font-bold text-[#67944e] uppercase tracking-widest mb-3 block">{related.category}</span>
                   <h4 className="text-xl font-bold text-slate-900 group-hover:text-[#67944e] transition-colors leading-tight">{related.title}</h4>
                 </Link>
