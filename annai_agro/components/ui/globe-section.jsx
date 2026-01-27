@@ -101,7 +101,7 @@ export function GlobeSection() {
       <div className="max-w-7xl mx-auto px-4 relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-10 items-center">
           {/* Globe Container */}
-          <div className="relative h-[400px] md:h-[700px] w-full flex items-center justify-center">
+          <div className="relative h-100 md:h-175 w-full flex items-center justify-center">
             <World data={exportArcs} globeConfig={globeConfig} />
           </div>
           {/* Text Content */}

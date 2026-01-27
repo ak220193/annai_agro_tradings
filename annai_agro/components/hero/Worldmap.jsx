@@ -51,7 +51,7 @@ export default function ExportMap() {
     <section className="py-20 bg-white w-full overflow-hidden" aria-labelledby="export-heading">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="order-2 lg:order-1 min-h-[400px] flex items-center justify-center">
+          <div className="order-2 lg:order-1 min-h-100 flex items-center justify-center">
             <GlobeSection />
           </div>
 
@@ -76,7 +76,7 @@ export default function ExportMap() {
               <dt className="text-3xl md:text-4xl font-black text-[#67944e] font-heading">
                 <Counter value={stat.value} suffix={stat.suffix} />
               </dt>
-              <dd className="text-sm md:text-base text-slate-700 font-medium max-w-[150px] mx-auto">
+              <dd className="text-sm md:text-base text-slate-700 font-medium max-w-37.5 mx-auto">
                 {stat.label}
               </dd>
             </div>
