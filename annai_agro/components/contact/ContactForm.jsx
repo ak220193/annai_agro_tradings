@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -11,21 +12,36 @@ const ContactForm = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Logic for your Express.js API call goes here
-    console.log("Form Data:", formData);
+    const loadingToast = toast.loading("Sending your inquiry...")
     
-    // Simulate API delay
-    setTimeout(() => {
-      setIsSubmitting(false);
-      alert("Inquiry sent successfully!");
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 1500);
-  };
+    try {
+      const response = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success("Inquiry sent successfully to Sales!", { id: loadingToast });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error(data.error || "Failed to send mail");
+      }
+    } catch (error) {
+      console.error("Submission Error:", error);
+      toast.error(error.message, { id: loadingToast });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };

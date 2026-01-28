@@ -5,6 +5,7 @@ import Navbar from "@/components/hero/Navbar";
 import Footer from "@/components/hero/Footer";
 import WhatsAppButton from "@/components/hero/WhatsappButton";
 
+
 const fontHeading = Bricolage_Grotesque({
   subsets: ["latin"],
   variable: "--font-heading",
@@ -26,7 +27,7 @@ export const metadata = {
     "Leading B2B agro products exporter from India. Specializing in organic spices, millets, and cereals. Certified NPOP, NOP, and EU organic food supplier.",
   metadataBase: new URL("https://www.annaiagro.com"),
   alternates: { canonical: "/" },
-  // Favicon & App Icons Configuration
+  
   icons: {
     icon: [
       { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },

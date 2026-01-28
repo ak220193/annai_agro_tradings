@@ -6,7 +6,7 @@ const ContactInfo = () => {
     {
       label: "Export Inquiries",
       value: "+91-9344295395",
-      sub: "gokul@annaiagrotradings.com",
+      sub: "sales@annaiagrotradings.com",
       icon: <Phone className="w-5 h-5" />,
     },
     {
