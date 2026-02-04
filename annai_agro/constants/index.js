@@ -16,8 +16,8 @@ export const CONTACT_DETAILS = {
   address: "1/263, Keeranur, Nallur, Ramanathapuram, Tamil Nadu, 623704",
   socials: {
     linkedin: "https://www.linkedin.com/in/gokulnath-ramesh-4434a93a4/",
-    instagram: "https://instagram.com/annai_agro", // Update with real link
-    youtube: "https://youtube.com/@annai_agro", // Update with real link
+    instagram: "https://www.instagram.com/annaiagro/", // Update with real link
+    youtube: "https://www.youtube.com/@AnnaiAgroTradings", // Update with real link
     whatsapp: "919344295395", // Clean number for API
   },
 };
