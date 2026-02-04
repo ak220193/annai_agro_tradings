@@ -108,7 +108,7 @@ const ContactSection = () => {
                     icon={<IoLogoInstagram />} 
                     label="Instagram" 
                     color="hover:bg-[#e4405f]" 
-                    href="#" 
+                    href="https://www.instagram.com/annaiagro/" 
                 />
               </div>
             </div>
