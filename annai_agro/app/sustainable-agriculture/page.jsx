@@ -22,7 +22,7 @@ export default function SustainableAgriculture() {
             <div className="bg-slate-50 py-24">
                 <TechnicalPractices />
             </div>
-            <MoUHighlight/>
+            <MoUHighlight />
             <FutureFocus />
 
             {/* Final Slogan Section */}

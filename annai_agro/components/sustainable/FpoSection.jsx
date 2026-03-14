@@ -25,7 +25,7 @@ export default function FpoSection() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-24">
       <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
-        
+
         {/* Left Side: Content */}
         <div>
           <div className="flex items-center gap-2 mb-6">
@@ -73,7 +73,7 @@ export default function FpoSection() {
         <div className="relative">
           {/* Decorative background element */}
           <div className="absolute -inset-4 bg-[#67944e]/5 rounded-[2.5rem] -rotate-2 hidden md:block" />
-          
+
           <div className="relative rounded-3xl overflow-hidden aspect-4/5 md:aspect-square shadow-2xl z-10">
             <Image
               src={Farmer}
@@ -85,7 +85,7 @@ export default function FpoSection() {
 
           {/* Premium Floating Trust Card */}
           <div className="absolute -bottom-12 -right-6 lg:-right-12 bg-white p-4 rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-50 hidden md:block max-w-[320px] w-full z-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-            
+
             {/* Pulsing indicator */}
             <div className="absolute top-6 right-6 flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#67944e] opacity-75"></span>
@@ -105,8 +105,6 @@ export default function FpoSection() {
                 </p>
               </div>
             </div>
-
-            
           </div>
         </div>
       </div>
