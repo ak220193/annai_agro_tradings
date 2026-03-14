@@ -36,8 +36,8 @@ export default function FpoSection() {
           </div>
 
           <h2 className="font-heading text-4xl lg:text-5xl text-slate-900 mb-6 leading-[1.1]">
-            Empowering Farmers through <br />
-            <span className="text-[#67944e]">Roots Organic Association</span>
+            Empowering Farmers through
+            <span className="text-[#67944e] ml-1">Roots Organic Association</span>
           </h2>
 
           <p className="font-body text-slate-600 leading-relaxed mb-10 text-lg">
@@ -72,7 +72,7 @@ export default function FpoSection() {
         {/* Right Side: Image & Trust Card */}
         <div className="relative">
           {/* Decorative background element */}
-          <div className="absolute -inset-4 bg-[#67944e]/5 rounded-[2.5rem] -rotate-2 hidden md:block" />
+          
 
           <div className="relative rounded-3xl overflow-hidden aspect-4/5 md:aspect-square shadow-2xl z-10">
             <Image
