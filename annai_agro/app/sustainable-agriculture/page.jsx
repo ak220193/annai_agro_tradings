@@ -4,6 +4,7 @@ import Pillars from "@/components/sustainable/Pillars";
 import FutureFocus from "@/components/sustainable/FutureFocus";
 import TechnicalPractices from "@/components/sustainable/TechnicalPractices";
 import SustainabilityMatrix from "@/components/sustainable/SustainabilityMatrix";
+import MoUHighlight from "@/components/sustainable/MoUSection";
 
 export const metadata = {
     title: "Sustainable Agriculture",
@@ -21,6 +22,7 @@ export default function SustainableAgriculture() {
             <div className="bg-slate-50 py-24">
                 <TechnicalPractices />
             </div>
+            <MoUHighlight/>
             <FutureFocus />
 
             {/* Final Slogan Section */}

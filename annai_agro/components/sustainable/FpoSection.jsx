@@ -5,7 +5,7 @@ import {
   Users2,
   Handshake,
 } from "lucide-react";
-
+import Farmer from "@/public/sustainble/sample.png"
 
 
 export default function FpoSection() {
@@ -76,7 +76,7 @@ export default function FpoSection() {
           
           <div className="relative rounded-3xl overflow-hidden aspect-4/5 md:aspect-square shadow-2xl z-10">
             <Image
-              src="https://i.pinimg.com/1200x/67/39/18/6739180698b78019b9e96148e47f2ba2.jpg"
+              src={Farmer}
               alt="Farmers in field"
               fill
               className="object-cover transition-transform duration-700 hover:scale-105"

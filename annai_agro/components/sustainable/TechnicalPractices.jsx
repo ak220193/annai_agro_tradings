@@ -43,7 +43,7 @@ export default function TechnicalPractices() {
         </div>
         <div className="bg-white px-6 py-4 rounded-xl shadow-sm border border-slate-100">
           <span className="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Main Crop focus</span>
-          <span className="font-heading text-xl text-[#67944e]">Red Chili & Urad Dal</span>
+          <span className="font-heading text-xl text-[#67944e]">Red Chili</span>
         </div>
       </div>
 

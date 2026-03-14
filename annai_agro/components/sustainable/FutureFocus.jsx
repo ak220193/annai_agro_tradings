@@ -52,11 +52,11 @@ export default function FutureFocus() {
               <p className="font-body text-xs text-[#67944e] uppercase tracking-widest">Certified</p>
             </div>
             <div>
-              <p className="font-heading text-2xl text-white">Eco</p>
+              <p className="font-heading text-2xl text-white">ECO</p>
               <p className="font-body text-xs text-[#67944e] uppercase tracking-widest">Friendly</p>
             </div>
             <div>
-              <p className="font-heading text-2xl text-white">Fair</p>
+              <p className="font-heading text-2xl text-white">FAIR</p>
               <p className="font-body text-xs text-[#67944e] uppercase tracking-widest">Income</p>
             </div>
           </div>
